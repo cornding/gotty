@@ -1,8 +1,10 @@
 import * as bare from "xterm";
 import { lib } from "libapps"
+import { WebLinksAddon } from 'xterm-addon-web-links';
 
 
 bare.loadAddon("fit");
+bare.loadAddon(new WebLinksAddon());
 
 export class Xterm {
     elem: HTMLElement;
